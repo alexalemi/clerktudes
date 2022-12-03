@@ -1,4 +1,4 @@
-.PHONY: all serve
+.PHONY: all serve clean
 
 
 all:
@@ -6,3 +6,7 @@ all:
 
 serve: all
 	python -m http.server 1313
+
+clean:
+	rm -rf _data
+	rm *.html
