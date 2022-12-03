@@ -1,10 +1,10 @@
 ;; # 🎄 Advent of Code 2018 - Day 17
 ;;
-;; [[link to puzzle]](https://adventofcode.com/2018/day/17)
-;;
 ;; In this challenge we are dropping water
 ;; into a bunch of clay buckets and have to figure
 ;; out how the water flows.
+;;
+;; [[link to puzzle]](https://adventofcode.com/2018/day/17)
 
 (ns p17
   (:require [clojure.string :as str]
