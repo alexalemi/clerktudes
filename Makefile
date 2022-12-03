@@ -1,8 +1,11 @@
-.PHONY: all serve clean
+.PHONY: all serve clean test
 
 
 all:
 	clj -X:clerk
+
+test:
+	clj -X:nextjournal/clerk :browse true
 
 serve: all
 	python -m http.server 1313
