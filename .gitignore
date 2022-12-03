@@ -1,2 +1,5 @@
 .cpcache
 .clerk
+_data
+*.html
+public

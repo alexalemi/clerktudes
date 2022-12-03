@@ -1,9 +1,10 @@
 {:paths ["src"]
- :deps  {io.github.nextjournal/clerk {:mvn/version "0.11.603"}}
+ :deps  {io.github.nextjournal/clerk {:mvn/version "0.12.699"}}
  :aliases 
- {:neil {:project {:name clerk/clerk}}
-  :clerk {:extra-deps {io.github.nextjournal/clerk {:git/sha "5620618c378be87b6b7c695c145424dded1ef080"}}
-          :extra-paths ["input"]
+ {:neil {:project {:name clerktudes/clerktudes}}
+  :nextjournal/clerk {:exec-fn nextjournal.clerk/build!
+                      :exec-args {:paths ["*.clj"]}}
+  :clerk {:extra-paths ["input"]
           :exec-fn nextjournal.clerk/build!
           :exec-args {:paths ["*.clj"]
                       :out-path "."}}}}
