@@ -3,8 +3,9 @@
  :aliases 
  {:neil {:project {:name clerktudes/clerktudes}}
   :nextjournal/clerk {:exec-fn nextjournal.clerk/build!
+                      :extra-paths ["input" "notebooks"]
                       :exec-args {:paths ["notebooks/*.clj"]}}
-  :clerk {:extra-paths ["input"]
+  :clerk {:extra-paths ["input" "notebooks"]
           :exec-fn nextjournal.clerk/build!
           :exec-args {:paths ["notebooks/*.clj"]
                       :out-path "."}}}}
