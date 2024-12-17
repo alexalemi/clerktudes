@@ -3,3 +3,5 @@
 _data
 *.html
 public
+.lsp
+.clj-kondo

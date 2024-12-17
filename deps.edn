@@ -1,6 +1,8 @@
 {:paths ["src"]
- :deps  {io.github.nextjournal/clerk {:mvn/version "0.12.699"}
-         org.clojure/math.combinatorics {:mvn/version "0.1.6"}} 
+ :deps  {io.github.nextjournal/clerk {:mvn/version "0.15.957"}
+         org.clojure/math.combinatorics {:mvn/version "0.2.0"}
+         org.clojure/test.check {:mvn/version "1.1.1"}
+         org.clojure/math.numeric-tower {:mvn/version "0.0.5"}} 
  :aliases 
  {:neil {:project {:name clerktudes/clerktudes}}
   :nextjournal/clerk {:exec-fn nextjournal.clerk/build!
