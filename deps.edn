@@ -1,6 +1,6 @@
 {:paths ["src"]
- :deps  {io.github.nextjournal/clerk {:mvn/version "0.15.957"}
-         org.clojure/math.combinatorics {:mvn/version "0.2.0"}
+ :deps  {io.github.nextjournal/clerk {:mvn/version "0.17.1102"}
+         org.clojure/math.combinatorics {:mvn/version "0.3.0"}
          org.clojure/test.check {:mvn/version "1.1.1"}
          org.clojure/math.numeric-tower {:mvn/version "0.0.5"}} 
  :aliases 
@@ -8,6 +8,9 @@
   :nextjournal/clerk {:exec-fn nextjournal.clerk/build!
                       :extra-paths ["input" "notebooks"]
                       :exec-args {:paths ["notebooks/*.clj"]}}
+  :nextjournal/clerk-serve! {:exec-fn nextjournal.clerk/serve!
+                             :exec-args {:port 7880 :watch-paths ["."] :host "0.0.0.0"}
+                             :main-opts ["-m" "babashka.cli.exec"]}
   :clerk {:extra-paths ["input" "notebooks"]
           :exec-fn nextjournal.clerk/build!
           :exec-args {:paths ["notebooks/*.clj"]
